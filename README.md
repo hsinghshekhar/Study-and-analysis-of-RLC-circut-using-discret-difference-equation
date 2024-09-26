@@ -1,1 +1,13 @@
-# Study-and-analysis-of-RLC-circut-using-discret-difference-equation
+RL Circuit Modelling through Finite Difference Approximation- During my MSc(IISER-TVM, Kerela) 3rd semester 2023 i enrolled a subject called "Numerical Solution of Differential Equation". I study and learn how differetial equation and partial differential equation is changed into Finite Difference Approximation with aid of finite difference scheme, centred difference scheme,etc. 
+Recently i enrolled a course "EXCELing with Mathematical Modeling" in 2024 on NPTEL by Prof. SANDIP BANERJEE a Professor in the Department of Mathematics, Indian Institute of Technology Roorkee (IITR), India. There is one mathematical model introduce that is Discrete Models. With the help of Finite Difference scheme, we try to learn better the dynamics of RL cricut with help of mathematical equation. And this concept are comes in my mind during study of Discrete Models in the course EXCELing with Mathematical Modeling.
+![Screenshot 2024-09-24 173413](https://github.com/user-attachments/assets/bc58d60b-a3aa-48d2-afef-66de71c62577) 
+
+Introduction-In most electrical programs, after the introduction of basic elements of Ohm’s and Kirchhoff’s current and voltage laws, the dynamic response of the circuits containing capacitors and inductors will be studied. solving the differential equations, and understanding the dynamic response of circuits. In order to improve students’ understanding, Hence, we propose a novel approach for these circuit analyses through the application of a discretized version of differential equations which i used in these circuit. The analysis can be performed by hand or this is also helpful for those who prefer modern education aided by computers. Approximation of differential equations by difference equations is useful for cases in which a close-form solution is not possible to be obtained for differential equations. We denote y'(x) in finite difference method is 
+![Screenshot 2024-09-24 204209](https://github.com/user-attachments/assets/f226e8f7-a9ad-4929-8214-119a8c0ad072)
+where ∆𝑡 should be chosen as small as possible, and k is discrete time. Now, Voltage across $L$ is $\frac{Ld I}{d t}$ and voltage across resistor is $R I$. Total voltage in loop is $V=R I(t)+L \frac{d I(t)}{d t}$, by solving the above equation, we get $I(t)=\frac{V}{R}\left(1-e^{\frac{-R t}{L}}\right)$. now, by Finite difference approximation. our, discret the domain $(0, T)$ into mess point, where $T>0$ is the finite time. let $\Delta t$ = time step, $t_k=k \Delta t, k=0,1,2, M$ be the mass point. Let $I(t _k)$ be the solution, and this denote in finite difference approximation is
+
+$$\frac{d I\left(t_{k})\right.}{d t}=\frac{I\left(t_{m+1}\right)-I\left(t_m\right)}{\Delta t}$$
+
+now, above equation in discret difference form in time 
+space $(0,T)$ is
+
